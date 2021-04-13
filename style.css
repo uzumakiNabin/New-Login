@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container.hidden{
+    display: none;
+}
+
+.form-title{
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.form-item{
+    margin: 20px 20px;
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type='password']{
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.form-item small{
+    display: none;
+    font-size: 13px;
+    color: #f23047;
+}
+
+.submit{
+    display: inline;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 20px 20px;
+}
+
+form p{
+    display: inline;
+    margin-left: -15px;
+}
+
+.switch-link{
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.notification{
+    position: absolute;
+    bottom: 0;
+    background-color: #a0a3a1;
+    border: 0;
+    border-radius: 5px;
+    padding: 20px 40px;
+    display: none;
+    transition: display 0.4s ease-in-out;
+}
+
+.notification h3{
+    margin: 0;
+    font-size: 30px;
+}
+
+.notification.pop-in{
+    display: block;
+}
